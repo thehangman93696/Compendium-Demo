@@ -101,15 +101,12 @@
             removeAllSaves();
 
             init();
+        }
 
-            activateTrialButton();
 
-        } else if (data.patreonCode.toLowerCase() != 'mobiledemo24to27aug') {
-            activateTrialButton();
-        } else {
 
             updateGameStartButton();
-        }
+
 
 
 
