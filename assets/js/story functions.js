@@ -18,9 +18,7 @@ function lockedStories() {
     var arr = [];
     storyNames.forEach(storyName => {
         const story = data.StoryObj[storyName];
-        if (story.isLocked || getStorySubtitle(story) == "Coming Soon" || (isDemo() && getStorySubtitle(story) == "Patreon Exclusive")) {
-            arr.push(storyName);
-        } 
+        if (story.isLocked || getStorySubtitle(story) == "Coming Soon" || (isDemo() && getStorySubtitle(story) == "Patreon Exclusive")) arr.push(storyName);
     })
     return arr;
 }
@@ -684,6 +682,14 @@ function storyVideo(src, isanimate= true, iscontrols= true, isloop= false, isaut
     return `
     <video class="story-vid"  ${iscontrols? `controls` : ``} ${isloop? `loop` : ``} ${isautoplay? `autoplay` : ``} ${ismute? `mute` : ``} ${isanimate? `data-animate-block` : ``}>
         <source src="${baseImagesFolder}/${src}.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>`;
+}
+
+function storyVideoURL(src, isanimate= true, iscontrols= true, isloop= false, isautoplay= false, ismute=false) {
+    return `
+    <video class="story-vid"  ${iscontrols? `controls` : ``} ${isloop? `loop` : ``} ${isautoplay? `autoplay` : ``} ${ismute? `mute` : ``} ${isanimate? `data-animate-block` : ``}>
+        <source src="${src}" type="video/webm">
         Your browser does not support the video tag.
     </video>`;
 }

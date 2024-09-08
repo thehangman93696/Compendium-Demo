@@ -1,9 +1,30 @@
+// data.stories[""] = {
+//   num: ,
+//   folder: "",
+//   overview: "",
+//   severity: "D",
+//   NTR: "None",
+//   "duration": 526,
+//   genre: ["", ],
+//   characters: ["", ],
+//   chapters: {
+//       1: {
+//           name: "",
+//           "duration": ,
+//           isPatreon: false,
+//           isComingSoon: false,
+//           "currentPassage": "",
+//           "passageNames": [""]
+//       }, 
+//     }
+
+
+// };
 
 var stories = {};
 
 
-const storyNames= ["Elf", "Growing Mommy's Dick", "Mr. Wolf", "Daddy I'm Scawwed", "Game Night", "Emma", "Boyhood", "Nungerie", "God Bless Estrogen Pills",
-  "Protecting A Femboy", "Hammer", "The Hanging Man", 
+const storyNames= ["Elf", "Boyhood", "Protecting A Femboy",
 ];
 
 var mainPageStoryButtons = {};
@@ -61,15 +82,12 @@ stories["Growing Mommy's Dick"]= {
   severity: "D",
   genre: ["Transexual",],
   characters: ["Bailey", "Jake" ],
-  subtitle: "Patreon Exclusive",
   chapters: [
        {
           name: "Hardships Of Life",
           num : 1,
           wordCount: 8301,
           index: true,
-          subtitle: "Patreon Exclusive",
-
       }, 
 
     ]
@@ -87,13 +105,11 @@ stories["Mr. Wolf"] = {
     background: "rgba(81, 108, 41, 0.14)",
     genre: ["Concept", "Parody", ],
     characters: ["Mr. Wolf", "Girl in the woods" ],
-    subtitle: "Patreon Exclusive",
     chapters: [
          {
             name: "Girl",
             num : 1,
             wordCount: 248,
-            subtitle: "Patreon Exclusive",
 
         }, 
   
@@ -110,15 +126,11 @@ stories["Mr. Wolf"] = {
     background: "rgba(216, 140, 140, 0.14)",
     genre: ["Concept", "Incest", "Ageplay",],
     characters: ["Joshua", "Birdie", "Teddy"],
-    subtitle: "Patreon Exclusive",
-
     chapters: [
         {
             name: "Pee",
             num : 1,
             wordCount: 1062,
-            subtitle: "Patreon Exclusive",
-
         }, 
         
     ],
@@ -132,15 +144,11 @@ stories["Mr. Wolf"] = {
     background: "rgba(41, 108, 103.98, 0.14)",
     genre: ["Concept", "Incest"],
     characters: [],
-    subtitle: "Patreon Exclusive",
-
     chapters: [
         {
             name: "Contest!",
             num : 1,
             wordCount: 505,
-            subtitle: "Patreon Exclusive",
-
         }, 
     ]
   
@@ -153,16 +161,12 @@ stories["Mr. Wolf"] = {
     severity: "D",
     genre: ["Female Cuckoldery", ],
     characters: ["Arabella", "Emma", "Henry" ],
-    subtitle: "Patreon Exclusive",
-
     chapters: [
         {
             name: "Perfume",
             num : 1,
             wordCount: 4425,
             index: true,
-            subtitle: "Patreon Exclusive",
-
         }, 
 
         {
@@ -170,8 +174,6 @@ stories["Mr. Wolf"] = {
           num : 2,
           wordCount: 5798,
           index: true,
-          subtitle: "Patreon Exclusive",
-
       }, 
     ]
   
@@ -185,70 +187,11 @@ stories["Mr. Wolf"] = {
     genre: ["Coming Of Age", "Romance", "Slice of Life", "Slowcore",],
     characters: ["Michael Alexander", "Griffith Tartaglia", "Marley Brinx" ],
     chapters: [
-
-
-
 {
-  name: "Justateen (turned 18)",
-  num : 1,
-  wordCount: 13930,
-  index: true,
-  subtitle: "Patreon Exclusive"
-  }, 
-{
-name: "Growing Up A Mormon",
-num : 2,
-wordCount: 0,
-subtitle: "Coming Soon"
-}, 
-{
-name: "French Girl",
-num : 3,
-wordCount: 0,
-subtitle: "Coming Soon"
-}, 
-
-{
-name: "You&rsquo;re such a tease",
-num : 4,
-wordCount: 0,
-subtitle: "Coming Soon"
-}, 
-{
-name: "NXT&rsquo;s Finest",
-num : 5,
-wordCount: 0,
-subtitle: "Coming Soon"
-}, 
-{
-name: "Second Happiness",
-num : 6,
-wordCount: 0,
-subtitle: "Coming Soon"
-}, 
-{
-name: "You&rsquo;re such a flirt",
-num : 7,
-wordCount: 0,
-subtitle: "Coming Soon"
-}, 
-{
-name: "Our First Date",
-num : 8,
-wordCount: 0,
-subtitle: "Coming Soon"
-}, 
-{
-name: "My Moon",
-num : 9,
-wordCount: 0,
-subtitle: "Coming Soon"
-}, 
-{
-name: "Theater",
-num : 10,
-wordCount: 0,
-subtitle: "Coming Soon"
+name: "Justateen (turned 18)",
+num : 1,
+wordCount: 13930,
+index: true,
 }, 
     ]
   
@@ -264,15 +207,11 @@ subtitle: "Coming Soon"
     fontWeight: 400,
     genre: ["Concept", "Religion", "Corruption",],
     characters: ["Alistair Everhart", "Pristine Rivers", "Father Gregory" ],
-    subtitle: "Patreon Exclusive",
-
     chapters: [
         {
             name: "Prologue",
             num : 1,
             wordCount: 942,
-            subtitle: "Patreon Exclusive",
-
         }, 
     ]
   
@@ -286,15 +225,11 @@ subtitle: "Coming Soon"
     background: '#da504d',
     genre: ["Concept", "Lustcraze",],
     characters: [],
-    subtitle: "Patreon Exclusive",
-
     chapters: [
         {
             name: "God Bless Estrogen Pills",
             num: 1,
             wordCount: 191,
-            subtitle: "Patreon Exclusive",
-
             
         }, 
     ]
@@ -309,16 +244,12 @@ subtitle: "Coming Soon"
     background: "rgba(13.20, 149.59, 226.31, 0.14)",
     genre: ["Exhibitionism", "Voyeurism", ],
     characters: ["Drew", "Damian", "Jaime"],
-    subtitle: "Patreon Exclusive",
-
     chapters: [
         {
             name: "Jaime",
             num: 1,
             wordCount: 2028,
             index: true,
-            subtitle: "Patreon Exclusive",
-
         }, 
 
         {
@@ -326,8 +257,6 @@ subtitle: "Coming Soon"
           num: 2,
           wordCount: 11127,
           index: true,
-          subtitle: "Patreon Exclusive",
-
       }, 
 
       {
@@ -335,17 +264,10 @@ subtitle: "Coming Soon"
         num: 3,
         wordCount: 16602,
         index: true,
-        paths: ['blood_path', 'junkies_path'],
-        subtitle: "Patreon Exclusive",
-
+        paths: ['blood_path', 'junkies_path']
     }, 
 
-    {
-      name: "The Arsonist",
-      num: 4,
-      wordCount: 0,
-      subtitle: "Coming Soon",
-  }, 
+
     ]
   
   
@@ -362,14 +284,11 @@ subtitle: "Coming Soon"
     fontWeight: 400,
     genre: ["Text Only",],
     characters: [],
-    subtitle: "Patreon Exclusive",
     chapters: [
         {
             name: "Hammer",
             num: 1,
             wordCount: 4307,
-            subtitle: "Patreon Exclusive",
-
         }, 
   
     ]

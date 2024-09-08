@@ -277,7 +277,6 @@ function displayAnimatedBox(name) {
     const ach = data.AchievementObj[name];
     const achOrigin = achievements[name]
     var x = document.getElementById("AchievementArea")
-    console.log(name, ach)
 
     x.innerHTML = `
     <img id="AchievementImg" src="assets/images/achievements/${ach.num}-${achOrigin.filename}/ts.png"><div id="AchievementText">${name}</div>
@@ -397,9 +396,7 @@ function switchToPageSlow(id2) {
             }
         })
 
-        if (version == "24.07a" && data.StoryObj["Elf"].isComplete) {
-            earnAchievement("Founder");
-        }
+        
           
 
     }, 1200);

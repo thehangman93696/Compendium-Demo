@@ -1,9 +1,6 @@
 function devLoad() {
 
 }
-
-const version = "Demo1";
-
 var currentAudio;
 
 var currentAudioNode;
@@ -28,6 +25,7 @@ const typography = {
 
 var sections;
 
+var valEntered;
 var rows;
 
 var parts;
@@ -64,7 +62,7 @@ var data = {};
 
 var gameLoaded = false;
 
-
+const version = "0.05";
 
 if (version.toLowerCase().includes('demo')) savePrefix = 'datademo'
 
@@ -81,7 +79,6 @@ var currentHeaderMode = "Old";
 var hideLogoUponScroll = true;
 
 if (localStorage.getItem(savePrefix + "0")) {
-  console.log(savePrefix + "0")
   resetGame = false;
 
   data = JSON.parse(localStorage.getItem(savePrefix + "0")) ;
@@ -277,6 +274,7 @@ function loadMainPageBricks() {
     `
   }
 }
+
 
 function isDemo() {
   return version.toLowerCase().includes('demo')

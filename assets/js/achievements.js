@@ -9,7 +9,7 @@ achievements["Founder"] = {
     postDescription : "You are a founder of the compendium!",
     requirement : "Have a membership before X Jul 2024",
     rarity : "Founder",
-    isHidden: false,
+    isHidden: true,
 
 };
 
@@ -18,7 +18,7 @@ achievements["Player One"] = {
     filename: "Player-One",
     preDescription : "Awarded to those who played the compendium in the first month after its release.",
     postDescription : "You were here when it started.",
-    requirement : "Have a membership between X Jul and Y Aug2024",
+    requirement : "Have a membership between 24 Aug and 23 Sep 2024",
     rarity : "Rare",
     isHidden: false,
 
