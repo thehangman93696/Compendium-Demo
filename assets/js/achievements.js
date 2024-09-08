@@ -1,4 +1,4 @@
-const achievementNames = ["Founder", "Player One", "Bloodbath", "Junkie"]
+const achievementNames = ["Player One", "Bloodbath", "Junkie"]
 
 var achievements = {};
 
@@ -113,7 +113,7 @@ function earnedAchievements() {
 
 function getTotalNumOfAchievements() {
 
-    return data.AchievementObj[achievementNames[achievementNames.length-1]].num+1;
+    return 2;
 }
 
 function isAchievementEarned(achName) {
