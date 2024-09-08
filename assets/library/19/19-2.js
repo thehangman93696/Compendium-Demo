@@ -116,7 +116,6 @@ ${storyImage('Jaime/12')}
 <p>It was no coincidence that when Drew urged for a girl in his hands, he dreamed of his sister. Jaime was his kind of girl, his definition of a woman, of beauty.</p>
 <p>He didn&rsquo;t want her presence in his mind while awkwardly playing with his dick, yet he would be lost in the pleasure of fantasizing about her voice and her touch.</p>
 <p>He wanted to stop, but it felt so unbelievably good.</p>
-${storyImage('Jaime/13')}
 <p>And as he touched himself, he couldn&rsquo;t help but imagine she was with him, all alone, undressing and teasing him until he couldn&rsquo;t take it anymore.</p>
 <p>And that&rsquo;s how he was set over the edge for the first time and unloaded over his stomach in the bathtub.</p>
 <p>He would love to believe it was his first and last time.</p>
