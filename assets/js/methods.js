@@ -958,3 +958,6 @@ function playAudio(audio=currentAudioNode) {
 
 
 
+function removeStoryName(str) {
+    storyNames = arrayDifference(storyNames, [str])
+}

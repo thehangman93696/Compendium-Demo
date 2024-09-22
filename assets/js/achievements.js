@@ -1,4 +1,4 @@
-const achievementNames = ["Player One", "Bloodbath", "Junkie"]
+const achievementNames = ["Founder", "Player One", "Bloodbath", "Junkie"]
 
 var achievements = {};
 
@@ -9,7 +9,7 @@ achievements["Founder"] = {
     postDescription : "You are a founder of the compendium!",
     requirement : "Have a membership before X Jul 2024",
     rarity : "Founder",
-    isHidden: true,
+    isHidden: false,
 
 };
 
@@ -113,7 +113,7 @@ function earnedAchievements() {
 
 function getTotalNumOfAchievements() {
 
-    return 2;
+    return data.AchievementObj[achievementNames[achievementNames.length-1]].num+1;
 }
 
 function isAchievementEarned(achName) {

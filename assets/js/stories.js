@@ -24,7 +24,8 @@
 var stories = {};
 
 
-const storyNames= ["Elf", "Boyhood", "Protecting A Femboy",
+var storyNames= ["Elf", "Growing Mommy's Dick", "Emma", "Boyhood",
+  "Protecting A Femboy", "Hammer", "The Hanging Man", 
 ];
 
 var mainPageStoryButtons = {};
@@ -80,6 +81,7 @@ stories["Growing Mommy's Dick"]= {
   num: 1,
   overview: "Your mom complains from the hardships of life so you tell her to suck it up and grow some balls. Next day she goes under surgery. Now it&rsquo;s your fault she has a dick and you have to nurture the tiny little thing until it grows into a healthy, full-fledged, throbbing cock.",
   severity: "D",
+  subtitle: "Coming Soon",
   genre: ["Transexual",],
   characters: ["Bailey", "Jake" ],
   chapters: [
@@ -159,6 +161,7 @@ stories["Mr. Wolf"] = {
     num: 14,
     overview: "The grand entrance hall of the Hastings estate was a testament to Lady Arabella Hastings&rsquo; refined tastes and the family&rsquo;s wealth. Tall windows with heavy velvet drapes let in slivers of the late afternoon sun, casting long shadows across the marbled floor. Arabella stood near the grand staircase, her dark eyes assessing the young woman who had just been shown in by the butler.",
     severity: "D",
+    subtitle: "Coming Soon",
     genre: ["Female Cuckoldery", ],
     characters: ["Arabella", "Emma", "Henry" ],
     chapters: [
@@ -192,6 +195,65 @@ name: "Justateen (turned 18)",
 num : 1,
 wordCount: 13930,
 index: true,
+}, 
+{
+name: "Growing Up A Mormon",
+num : 2,
+wordCount: 8248,
+index: true, 
+subtitle: "Coming Soon",
+}, 
+{
+name: "French Girl",
+num : 3,
+wordCount: 8137,
+index: true,
+subtitle: "Coming Soon",
+}, 
+
+{
+name: "You&rsquo;re such a tease",
+num : 4,
+wordCount: 9340,
+index: true,
+subtitle: "Coming Soon",
+}, 
+{
+name: "NXT&rsquo;s Finest",
+num : 5,
+wordCount: 6785,
+index: true,
+subtitle: "Coming Soon",
+}, 
+{
+name: "Second Happiness",
+num : 6,
+wordCount: 0,
+subtitle: "Coming Soon"
+}, 
+{
+name: "You&rsquo;re such a flirt",
+num : 7,
+wordCount: 0,
+subtitle: "Coming Soon"
+}, 
+{
+name: "Our First Date",
+num : 8,
+wordCount: 0,
+subtitle: "Coming Soon"
+}, 
+{
+name: "My Moon",
+num : 9,
+wordCount: 0,
+subtitle: "Coming Soon"
+}, 
+{
+name: "Theater",
+num : 10,
+wordCount: 0,
+subtitle: "Coming Soon"
 }, 
     ]
   
@@ -267,7 +329,12 @@ index: true,
         paths: ['blood_path', 'junkies_path']
     }, 
 
-
+    {
+      name: "The Arsonist",
+      num: 4,
+      wordCount: 0,
+      subtitle: "Coming Soon",
+  }, 
     ]
   
   
@@ -278,6 +345,7 @@ index: true,
     overview: "On my knees<br>In a dry puddle of my tears</br>On the floor<br/>His fingers pierce my scalp and his thumbs gouge my eyes",
     buttonStyle: "",
     severity: "B",
+    subtitle: "Coming Soon",
     background: '#f5f5ef',
     textColor: 'black',
     font: 'Space Grotesk',
@@ -374,9 +442,10 @@ storyNames.forEach(storyName => {
   if (data.StoryObj[storyName].chapters.length > stories[storyName].chapters.length) initStory(storyName);
   const story = data.StoryObj[storyName];
   const current_total_chapters_num = stories[story.name].chapters.length
+  const old_total_chapters_num = story.chapters.length
   for(let i =0; i< current_total_chapters_num; i++) {
     const chapter = story.chapters[i];
-    if (i+1 > story.chapters.length) {
+    if (i+1 > old_total_chapters_num) {
       story.chapters.push(new Chapter(story.name, stories[story.name].chapters[i]));
       story.isSeen = false;
       story.isRead = false;
@@ -396,6 +465,8 @@ storyNames.forEach(storyName => {
       }
       if (chapter.name!=chapterOrigin.name) chapter.name=chapterOrigin.name;
     }
+
+    if (i > 0 && story.chapters[i-1].isRead && isChapterAvailable(story.chapters[i])) story.chapters[i].isUnlocked = true;
     
 
   }

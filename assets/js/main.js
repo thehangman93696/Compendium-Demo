@@ -96,20 +96,16 @@
 
         if(!data.hasOwnProperty('patreonCode')) data.patreonCode = '';
 
-        updateGameStartButton();
-
-
         if (resetGame) {
 
             removeAllSaves();
 
             init();
 
-            activateTrialButton();
-
-        
+           
+            
         }
-
+        updateGameStartButton();
 
 
         ssPhotoswipe();

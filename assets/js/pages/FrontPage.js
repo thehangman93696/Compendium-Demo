@@ -233,14 +233,16 @@ const startGame = function() {
       openStory(data.StoryObj["Elf"]);
 
     }
+
+    if (!(data.patreonCode in BSideCodes)) {
+      
+    }
     
     
 
     devLoad();
 
     saveCleanup();
-
-    earnAchievement('Player One')
 
   }
 

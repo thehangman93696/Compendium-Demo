@@ -252,6 +252,29 @@ function storyImage(src, fig="", cl="", sty="", extension='jpg') {
     return img;
 }
 
+function storyImageRecurring(src, fig="", cl="", sty="", extension='jpg') {
+    var img;
+    var classtext = ``;
+    src = `assets/images/stories/${currentStory.num}/base/recurring/${src}.${extension}`;
+    if (cl) classtext = `class="${cl}"`;
+    var styletext = ``;
+    if (sty) styletext = `style="${sty}"`;
+    img = `<img src="${src}" ${classtext} ${styletext} data-animate-block>`;
+    if (fig) {
+        img = `
+    <figure>
+        ${img}
+
+        <figcaption>
+            ${fig}
+        </figcaption>
+    </figure>`;
+    } 
+    return img;
+}
+
+
+
 function storyImageNonAnimate(src, fig="", cl="", sty="", extension='jpg') {
     var img;
     var classtext = ``;
@@ -355,6 +378,10 @@ function prepareStory() {
     updateChapterObj();
     fadeTransition();
     container.innerHTML = '';
+    const x = document.querySelector('#audio')
+    if (x) {
+        x.remove()
+    } 
 
 }
 
@@ -391,19 +418,34 @@ function storyWideImage(filename, animate=true,  extension='jpg') {
     return `<img src="${baseImagesFolder}/${filename}.${extension}" class="lg-12" ${animate? `data-animate-block` : ``} >`;
 }
 
-function storyLeftImage(filename, animate=true) {
+function storyImageLeft(filename, animate=true) {
     animate=true;
     return `<img class="portrait-left" src= "${baseImagesFolder}/${filename}.jpg" ${animate? `data-animate-block` : ``} >`;
 }
 
-function storyRightImage(filename, animate=true) {
+function storyImageRight(filename, animate=true) {
     animate=true;
     return `<img class="portrait-right" src= "${baseImagesFolder}/${filename}.jpg" ${animate? `data-animate-block` : ``} >`;
 }
 
-function storyCenterImage(filename, animate=true, extension='jpg') {
+function storyImageCenter(filename, animate=true, extension='jpg') {
     animate=true;
     return `<img class="portrait-center" src= "${baseImagesFolder}/${filename}.${extension}" ${animate? 'data-animate-block' : ''} >`;
+}
+
+function storyLeftImageRecurring(filename, animate=true) {
+    animate=true;
+    return `<img class="portrait-left" src= "assets/images/stories/${currentStory.num}/base/recurring/${filename}.jpg" ${animate? `data-animate-block` : ``} >`;
+}
+
+function storyRightImageRecurring(filename, animate=true) {
+    animate=true;
+    return `<img class="portrait-right" src= "assets/images/stories/${currentStory.num}/base/recurring/${filename}.jpg" ${animate? `data-animate-block` : ``} >`;
+}
+
+function storyCenterImageRecurring(filename, animate=true, extension='jpg') {
+    animate=true;
+    return `<img class="portrait-center" src= "assets/images/stories/${currentStory.num}/base/recurring/${filename}.${extension}" ${animate? 'data-animate-block' : ''} >`;
 }
 
 
@@ -682,14 +724,6 @@ function storyVideo(src, isanimate= true, iscontrols= true, isloop= false, isaut
     return `
     <video class="story-vid"  ${iscontrols? `controls` : ``} ${isloop? `loop` : ``} ${isautoplay? `autoplay` : ``} ${ismute? `mute` : ``} ${isanimate? `data-animate-block` : ``}>
         <source src="${baseImagesFolder}/${src}.webm" type="video/webm">
-        Your browser does not support the video tag.
-    </video>`;
-}
-
-function storyVideoURL(src, isanimate= true, iscontrols= true, isloop= false, isautoplay= false, ismute=false) {
-    return `
-    <video class="story-vid"  ${iscontrols? `controls` : ``} ${isloop? `loop` : ``} ${isautoplay? `autoplay` : ``} ${ismute? `mute` : ``} ${isanimate? `data-animate-block` : ``}>
-        <source src="${src}" type="video/webm">
         Your browser does not support the video tag.
     </video>`;
 }
