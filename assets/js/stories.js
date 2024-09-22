@@ -462,7 +462,11 @@ storyNames.forEach(storyName => {
     }
 
     if (i > 0 && story.chapters[i-1].isRead && isChapterAvailable(story.chapters[i])) story.chapters[i].isUnlocked = true;
-    
+    if (story.name == "Protecting A Femboy" && story.chapters[2].isComplete) {
+      story.isSeen = true;
+      story.isRead = true;
+      story.isComplete = true;
+    }
 
   }
   updateStoryObj(story);
