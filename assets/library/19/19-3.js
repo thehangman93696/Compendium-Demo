@@ -644,7 +644,7 @@ ${storyImageCenter('mydaughtersworld/14')}
 <p>After the last video was released the website saw its highest traffic since it launched. Damian&rsquo;s mom wasted no time in uploading pictures teasing their upcoming releases.</p>
 <p>One photo showed that black man sitting on the couch naked, with his massive cock in full display dangling underneath him, so fat it looked like an elephant&rsquo;s hose. It was so thick and long, it almost touched the floor.</p>
 <p>Damian was on all fours, sucking on the tip of that massive cock. His ass was facing the camera with the words &lsquo;virgin boy-cunt&rsquo; plastering it, written in red, and his asshole was covered with crossing black tapes.</p>
-<p>The latest video on the site was titled ${appendLinkInline('&ldquo;Watching My Hot Mom Get Fucked by a Real Man&rsquo;s Cock&rdquo;', 'section7', true)}.</p>
+<p>The latest video on the site was titled ${appendLinkInline('&ldquo;Watching My Hot Mom Fucked by a Real Man&rsquo;s Cock&rdquo;', 'section7', true)}.</p>
 ${storyImage('mydaughtersworld/Alison/a', '', '', '', 'webp')}
 `
 )
@@ -1007,10 +1007,42 @@ const row9d= storyRow('9d', 'Blaze (Part 3)',
 `
 ${storyImage('arsonist3', '', '', '', 'png')}
 
-${storyEndButton('To be continued...', 'checkPathEnd193()')}
+${appendLinkRow('To be continued...', 'demoEnd1', true, 'hideSectionsDemo193()')}
+
 `
 )
 
+const demoEnd1 = storyRow('demoEnd1', 'The End', 
+    `<p>You just finished Chapter 3 of Protecting A Femboy.</p>
+    <p>Would you like to see more?</p>
+    ${appendLinkRow('Yes, I want more', 'demoEnd2', true)}
+    <a href="#" onclick="checkPathEnd193(); endChapter();">No</a>
+
+    `
+    )
+
+
+
+const demoEnd2 = storyRow('demoEnd2', ' ', 
+    `<p>Are you really enjoying yourself?</p>
+    ${appendLinkRow('Yes, having a really good time here', 'demoEnd', true)}
+    <a href="#" onclick="checkPathEnd193(); endChapter();">Nah, just browsing</a>
+
+    `
+    )
+
+
+
+const demoEnd = storyRow('demoEnd', 'Thank you', 
+    `<p>If you enjoyed this experience, I’d love your support on Patreon! By joining, you’ll help us continue making experiences like this, get early 
+    updates on future releases and access to our exclusive Discord community. Also, if you can, show some love on the forum where you found this, and don’t forget to check out my first story, <strong>Becoming The Hangman</strong>.</p>
+    <a class="btn btn--primary custom-story-button" href="https://www.patreon.com/Liturgy97"  target="_blank">
+    Visit Patreon</a>
+
+    <a id="End-Chapter" class="btn btn--stroke custom-story-button" href="#" onclick="checkPathEnd193(); endChapter();">
+    End Chapter</a>
+    `
+    )
 
 }
 
@@ -1226,4 +1258,10 @@ function checkPathEnd193() {
     } else {
         endPath('blood_path');
     }
+}
+
+function hideSectionsDemo193() {
+    document.querySelector('#intro').style.display = "none";
+    document.querySelector('#index-title-head').style.display = "none";
+    document.querySelector('#chapter-index').style.display = "none";
 }

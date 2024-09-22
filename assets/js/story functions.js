@@ -273,6 +273,21 @@ function storyImageRecurring(src, fig="", cl="", sty="", extension='jpg') {
     return img;
 }
 
+function storyImageRecurringLeft(filename, animate=true) {
+    animate=true;
+    return `<img class="portrait-left" src= "assets/images/stories/${currentStory.num}/base/recurring/${filename}.jpg" ${animate? `data-animate-block` : ``} >`;
+}
+
+function storyImageRecurringRight(filename, animate=true) {
+    animate=true;
+    return `<img class="portrait-right" src= "assets/images/stories/${currentStory.num}/base/recurring/${filename}.jpg" ${animate? `data-animate-block` : ``} >`;
+}
+
+function storyImageRecurringCenter(filename, animate=true, extension='jpg') {
+    animate=true;
+    return `<img class="portrait-center" src= "assets/images/stories/${currentStory.num}/base/recurring/${filename}.${extension}" ${animate? 'data-animate-block' : ''} >`;
+}
+
 
 
 function storyImageNonAnimate(src, fig="", cl="", sty="", extension='jpg') {
@@ -466,7 +481,7 @@ function endChapter(chapter=currentChapter) {
     checkChapterCompletion();
 
     clearLoadedScripts();
-
+    
     
     if (nextChapter(chapter) && isChapterAvailable(nextChapter(chapter))) {
         
@@ -475,8 +490,10 @@ function endChapter(chapter=currentChapter) {
 
         checkStoryCompletion();
         story.currentChapter = story.chapters[0]
-
+        loadAchievementsPage();
+        loadSavesPage();
         switchToPage("MainPage");
+        
     }
     
 }

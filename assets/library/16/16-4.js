@@ -1,8 +1,8 @@
 
 loadPage = function() {
-    prepareStory();
-    const section1 = newSection(1);
-    const row1 = storyRow('1', 'INT. ROOM<br> EARLY MORNING', 
+prepareStory();
+const section1 = newSection(1);
+const row1 = storyRow('1', 'INT. ROOM<br> EARLY MORNING', 
 `
 <h3>Day 4 - Thursday, 20 August, 2006</h3>
 ${storyImageRecurring('myroom_ground')}
@@ -13,10 +13,9 @@ ${appendLinkRow('Prepare and go to school', '1b', true)}
 section1.appendChild(row1);
 
 
-    }
 const row1b = storyRow('1b', 'INT. CLASSROOM<br>MORNING', 
 `
-${storyImageRight('1')}
+${storyImageRight('0')}
 <p>As the Maths class drew to a close, Roberts assigned the class a task.</p>
 <p><span class="Jen">JEN</span><br />You will be given a task over the weekend. You will each be paired up with another student and given two papers with problems that must be solved and submitted by Monday. You will have to work to together on these problems, as both students in the pair will receive the same grade. Make sure to understand the questions and answers quite well, because I<br />will be asking about them on Monday. Do you have any questions?</p>
 <p>Nobody in the room dared to raise a question. Roberts passed out the papers among the class. Michael&rsquo;s eyes scanned the document he received, but it might as well have been written in hieroglyphs for all the sense it made to him. He hoped Roberts would have the good sense to pair him with a nerd.</p>
@@ -30,7 +29,7 @@ ${storyImageRight('1')}
 <p><span class="Rick">RICK</span><br />Ms. Roberts, some of these pairs don&rsquo;t make any sense.</p>
 <p><span class="Kelsi">KELSI</span><br />Guys, chill! She said there will be no changes.</p>
 <p>Rick and Gina shut up after Kelsi&rsquo;s shout.</p>
-<p><span class="Jen">JEN</span><br />Kelsi, when I&rsquo;m standing in the class, I would like all talk to be addressed to me.</p>
+<p><span class="Jen">JEN</span><br />Kelsi, when I&rsquo;m inside the classroom, I would like all talk to be addressed to me.</p>
 <p><span class="Kelsi">KELSI</span><br />Yes, ma&rsquo;am.</p>
 <p><span class="Jen">JEN</span><br />You three and your pairs will be docked a point off your assignments. Do you have anything else to say before I go on?</p>
 <p>All gazes converged on Kelsi, her glare igniting and fixated on Rick as if she was visualizing murdering him. Kelsi was indifferent to the grades but not to the stain on her reputation, bristled at the notion that no one would want to be paired with her as her mere presence in a pair dragger her potential partners down, thanks to the point deducted.</p>
@@ -150,7 +149,7 @@ ${storyImageRecurring('school_hall')}
 const section2 = newSection(2);
 const row2a = storyRow('2a', 'INT. HALL<br>LATE AFTERNOON', 
 `
-${storyImageRecurring('home_ground')}
+${storyImageRecurring('hall_ground')}
 <p>The moment Michael stepped through the door, his favorite voice in the world called out to him.</p>
 ${storyImageRecurringRight('sherrie_hall')}
 <p><span class="Sherrie">SHERRIE</span><br />Master!</p>
@@ -176,57 +175,57 @@ const row2b = storyRow('2b', 'INT. KENZIE&rsquo;S ROOM<br>LATE AFTERNOON',
 `
 ${storyImageLeft('3')}
 <p><span class="Michael">MICHAEL</span><br />Kenzie!</p>
-<p>KENZIE<br />Yes, mast- umm, Michael?</p>
+<p><span class="Kenzie">KENZIE</span><br />Yes, mast- umm, Michael?</p>
 <p><span class="Michael">MICHAEL</span><br />Kenzie!</p>
-<p>KENZIE<br />Yes, mast- umm, Michael?</p>
+<p><span class="Kenzie">KENZIE</span><br />Yes, mast- umm, Michael?</p>
 <p><span class="Michael">MICHAEL</span><br />What&rsquo;s wrong with you?</p>
-<p>KENZIE<br />Nothing. Did you want something from me?</p>
+<p><span class="Kenzie">KENZIE</span><br />Nothing. Did you want something from me?</p>
 <p>This is Michael&rsquo;s little sister Kenzie. She&rsquo;s 2 years younger than him but leagues above him in intelligence. She&rsquo;s going through a goth phase right now, but trust us she&rsquo;s really cool.</p>
 <p><span class="Michael">MICHAEL</span><br />Do you know anything about... what is it called?</p>
 <p>He retrieved the assignment paper from his bag.</p>
 <p><span class="Michael">MICHAEL</span><br />Indefinite integrals?</p>
-<p>KENZIE<br />Let me take a look.</p>
+<p><span class="Kenzie">KENZIE</span><br />Let me take a look.</p>
 <p>Michael showed Kenzie the paper, and she skimmed it with her eyes in a flash. As she did, he filled her in on the assignment details.</p>
-<p>KENZIE<br />Easy. Give me 30 minutes and I&rsquo;ll write you the solutions.</p>
+<p><span class="Kenzie">KENZIE</span><br />Easy. Give me 30 minutes and I&rsquo;ll write you the solutions.</p>
 <p>30 minutes?!! He figured those questions would take hours to solve, and then some more to jot down the solutions.</p>
 <p><span class="Michael">MICHAEL</span><br />I don&rsquo;t need the solutions. I need to know how to solve them. I&rsquo;m paired up with a girl at school and she has a paper with different questions. We&rsquo;re gonna meet tonight and solve them together.</p>
-<p>KENZIE<br />Oh, I see. So you want me to show you how to do it.</p>
+<p><span class="Kenzie">KENZIE</span><br />Oh, I see. So you want me to show you how to do it.</p>
 ${storyImageRight('4')}
-<p>KENZIE<br />Alright. Sit down.</p>
+<p><span class="Kenzie">KENZIE</span><br />Alright. Sit down.</p>
 ${storyImage('5')}
 <p>Kenzie grabbed a book and a notebook, hopping onto her bed. He settled in next to her.</p>
 ${storyImage('6')}
-<p>Kenzie dove into the problems right before Michael&rsquo;s eyes. He couldn&rsquo;t believe how quickly she cracked each one. No hesitation, just straight into the solutions. Her approach was a world apart from what we&rsquo;d learned in class. A little bit more sophisticated, but generally more intuitive and easier to implement once you memorize the steps.</p>
+<p>Kenzie dove into the problems right before Michael&rsquo;s eyes. He couldn&rsquo;t believe how quickly she cracked each one. No hesitation, just straight into the solutions. Her approach was a world apart from what they&rsquo;d learned in class. A little bit more sophisticated, but generally more intuitive and easier to implement once you memorize the steps.</p>
 <p>As she penned down the solutions, she broke them down for me in simple terms that even he could understand, knowing just how to tailor her explanations for her big bro&rsquo;s not-so-big brain. Her examples were easy for him to visualize, making it all click like never before. Studying math never felt so easy in his life.</p>
 <p>Once all the answers were neatly inked, she passed him the notebook, urging him to give it a shot himself. He took up the challenge, following her lead as best he could, albeit not as elegantly. Kenzie watched over his shoulder, guiding him through the rough patches, her casual banter filling the air as they worked through the problems together.</p>
-<p>KENZIE<br />So who&rsquo;s the lucky girl?</p>
+<p><span class="Kenzie">KENZIE</span><br />So who&rsquo;s the lucky girl?</p>
 <p><span class="Michael">MICHAEL</span><br />Someone in my class. You won&rsquo;t know her.</p>
-<p>KENZIE<br />Is she cute?</p>
+<p><span class="Kenzie">KENZIE</span><br />Is she cute?</p>
 <p><span class="Michael">MICHAEL</span><br />She&rsquo;s the hottest girl in the whole school.</p>
-<p>KENZIE<br />Really? Beauty is subjective, you know.</p>
+<p><span class="Kenzie">KENZIE</span><br />Really? Beauty is subjective, you know.</p>
 <p><span class="Michael">MICHAEL</span><br />She&rsquo;s the most beautiful girl in school, in my eyes. You happy now?</p>
-<p>KENZIE<br />Are you dating?</p>
+<p><span class="Kenzie">KENZIE</span><br />Are you dating?</p>
 <p><span class="Michael">MICHAEL</span><br />Not yet. I&rsquo;m making my move on her tonight. I&rsquo;ll take her to the cinema.</p>
 <p>Her silence hung heavy in the air. He lifted his gaze, catching her fiddling with the bedsheet.</p>
-<p>KENZIE<br />What are you gonna watch?</p>
+<p><span class="Kenzie">KENZIE</span><br />What are you gonna watch?</p>
 <p><span class="Michael">MICHAEL</span><br />Whiplash 2!</p>
-<p>KENZIE<br />There&rsquo;s a second part?!!</p>
-<p><span class="Michael">MICHAEL</span><br />Yeah, it&rsquo;s coming out tonight. I&rsquo;m gonna be one of the first people to see it. I booked two tickets for the premiere<br />once they were available. It starts tonight at 11.</p>
-<p>KENZIE<br />Oh my god, that&rsquo;s so cool. I loved the first movie so much. I wanna see the sequel.</p>
+<p><span class="Kenzie">KENZIE</span><br />There&rsquo;s a second part?!!</p>
+<p><span class="Michael">MICHAEL</span><br />Yeah, it&rsquo;s coming out tonight. I&rsquo;m gonna be one of the first people to see it. I booked two tickets for the premiere once they were available. It starts tonight at 11.</p>
+<p><span class="Kenzie">KENZIE</span><br />Oh my god, that&rsquo;s so cool. I loved the first movie so much. I wanna see the sequel.</p>
 <p><span class="Michael">MICHAEL</span><br />Tell your friends and go watch it together or something.</p>
-<p>KENZIE<br />Yeah, I guess I can do that. What if they&rsquo;re not interested? Would you take me to see it?</p>
+<p><span class="Kenzie">KENZIE</span><br />Yeah, I guess I can do that. What if they&rsquo;re not interested? Would you take me to see it?</p>
 <p><span class="Michael">MICHAEL</span><br />I&rsquo;m not gonna pay to watch it twice.</p>
-<p>KENZIE<br />Oh, so I do all of this for you and you don&rsquo;t wanna take me to watch a movie?</p>
-<p><span class="Michael">MICHAEL</span><br />Uhh, I guess you&rsquo;re right. You know what? I&rsquo;ll make you a deal. If things go well tonight, I&rsquo;ll take you to the cinema<br />on the weekend.</p>
-<p>KENZIE<br />Really?</p>
+<p><span class="Kenzie">KENZIE</span><br />Oh, so I do all of this for you and you don&rsquo;t wanna take me to watch a movie?</p>
+<p><span class="Michael">MICHAEL</span><br />Uhh, I guess you&rsquo;re right. You know what? I&rsquo;ll make you a deal. If things go well tonight, I&rsquo;ll take you to the cinema on the weekend.</p>
+<p><span class="Kenzie">KENZIE</span><br />Really?</p>
 <p><span class="Michael">MICHAEL</span><br />I promise.</p>
-<p>KENZIE<br />So what do you mean by things going well.</p>
+<p><span class="Kenzie">KENZIE</span><br />So what do you mean by things going well.</p>
 <p><span class="Michael">MICHAEL</span><br />Well, if we start dating because of the whole studying together thing, I&rsquo;ll have to do something to pay you back, right?</p>
-<p>KENZIE<br />Oh, thank you so much, big bro. You&rsquo;re the best.</p>
+<p><span class="Kenzie">KENZIE</span><br />Oh, thank you so much, big bro. You&rsquo;re the best.</p>
 <p>Kenzie gave him a big hug.</p>
-<p>KENZIE<br />Do you have enough money for the date? I can go take some money from Dad if you want.</p>
-<p>That was a weird thing to say, Michael mused silently. Guess she&rsquo;s bent on ensuring the date goes well now. Wouldn&rsquo;t be<br />surprised if she starts giving out dating advice any moment.</p>
-<p>He told Kenzie he had enough cash, which was true&mdash;He still had the $1000 from Mom&rsquo;s birthday gift tucked away&mdash;but no need for her to know that.<br />They swiftly returned to hitting the books.</p>
+<p><span class="Kenzie">KENZIE</span><br />Do you have enough money for the date? I can go take some money from Dad if you want.</p>
+<p>That was a weird thing to say, Michael mused silently. Guess she&rsquo;s bent on ensuring the date goes well now. Wouldn&rsquo;t be surprised if she starts giving out dating advice any moment.</p>
+<p>He told Kenzie he had enough cash, which was true&mdash;He still had the $1000 from Mom&rsquo;s birthday gift tucked away&mdash;but no need for her to know that. They swiftly returned to hitting the books.</p>
 <p>Ninety minutes later, he had my own solutions neatly written down. It took them a total of three hours to crack the whole thing, from 3:30 to 6:30. With that wrapped up, Michael snagged Kenzie&rsquo;s book and notebook, bid her room farewell, and headed off to prep myself for the rendezvous with ${appendLinkInline('Gina', 'section3')}.</p>
 
 
@@ -236,7 +235,7 @@ ${storyImage('6')}
 const section3 = newSection(3);
 
 
-const row3a = storyRow('3a', 'EXT. GINA<&rsquo;S HOUSE FRONT ENTRANCE<br>EVENING', 
+const row3a = storyRow('3a', 'EXT. GINA&rsquo;S HOUSE FRONT ENTRANCE<br>EVENING', 
 `
 ${storyImage('7')}
 <p>7th Street lay just a ten-minute stroll from Michael&rsquo;s doorstep. He made his way there, found Gina&rsquo;s residence easily because Ned informed him the house number.</p>
@@ -282,7 +281,7 @@ ${storyImageLeft('10')}
 <p><span class="Michael">MICHAEL</span><br />Anyway. Are we gonna start with this stuff or what?</p>
 <p><span class="Gina">GINA</span><br />What do you mean by big teaser?</p>
 <p><span class="Michael">MICHAEL</span><br />Gina, we don&rsquo;t have much time. Are we gonna study tonight or not?</p>
-${storyImageCenter('11')}
+${storyImageRight('11')}
 <p>They began studying immediately. He examined her paper, noted her problems were similar to his own. Skimming it, he undertood Kenzie&rsquo;s techniques would work with all of them.</p>
 <p>He proceeded to guide Gina through the solutions, explaining the robot&rsquo;s intuitive methods as Kenzie had taught him. Initially hesitant to use methods not taught in class, Gina eventually embraced the unconventional approach, when Michael convinced her to give it a chance and she saw how easy to implement they were.</p>
 <p>Michael noticed Gina was brighter than she looked, quickly learning and understanding a problem once able to visualize it or when it was stripped to very simple terms, pretty much like Michael actually. Her glaring issue lay in her inability to stay interested doing one thing for a long span of time. She would frequently get lost in her tracks and start fiddling with her hair, play with the pages of her notebooks, or stare into Michael&rsquo;s eyes meaninglessly. He had to nudge her shoulder each time she was distracted to wake her up to what she was doing.</p>
@@ -423,7 +422,7 @@ ${storyImageRight('13')}
 <p><span class="Rick">RICK</span><br />Pfft. What kind of human garbage are you, man?</p>
 <p>Rick raised his leg, ready to strike again. Michael flinched, but Rick only snickered. With a cruel smirk, he tore the tickets in half and hurled them, along with Michael&rsquo;s wallet, at his face.</p>
 ${storyImage('8')}
-Then, without a backward glance, Rick and Gina walked into her house, slamming the door shut in Michael&rsquo;s ${appendLinkRowInline('face', '4e', false, emptyFuncStr, 'section4.appendChild(row4f)')}.
+Then, without a backward glance, Rick and Gina walked into her house, slamming the door shut in Michael&rsquo;s ${appendLinkRowInline('face', '4e', false)}.
 
 `
 )
@@ -434,8 +433,7 @@ ${storyImage('14')}
 
 
 <p><>He rose, brushing off his clothes, and checked his watch. 10:50. The movie started in 10 minutes. Grabbing the torn tickets and his wallet and started running. He ran and he ran and he kept running. He ran in the streets, towards the city center, between the people and the cars. He ran because he was angry, he was sickly disappointed in himself.</p>
-<p>He didn&rsquo;t want to think about what had just happened. He wanted to kick that feeling of anger and disgust out of him. He ran because he really wanted to watch that movie, he&rsquo;s been waiting for it for a long time now. Nothing will make him miss it. He sprinted with all his might.</p>
-
+<p>He didn&rsquo;t want to think about what had just happened. He wanted to kick that feeling of anger and disgust out of him. He ran because he really wanted to watch that movie, he&rsquo;s been waiting for it for a long time now. Nothing will make him miss it. He ${appendLinkRowInline('sprinted', '4f', true)} with all his might.</p>
 `
 )
 
@@ -651,10 +649,10 @@ const section6 = newSection(6);
 
 const row6a = storyRow('6a', 'INT. HALL - NIGHT', 
 `
-<p>[hall_ground]</p>
-<p>Got home at 2:30 in the morning. If he fell asleep right then, he&rsquo;d get barely four hours before he had to wake up for school.</p>
+${storyImageRecurring('hall_ground')}
+<p>He got home at 2:30 in the morning. If he had fallen asleep right then, he&rsquo;d have gotten barely four hours before he had to wake up for school.</p>
 ${storyImage('25')}
-<p><span class="Sherrie">SHERRIE</span><br />{}Master!</p>
+<p><span class="Sherrie">SHERRIE</span><br />Master!</p>
 <p><span class="Michael">Michael:</span> Not now, Sherrie, I need to go to sleep.</p>
 <p><span class="Sherrie">Sherrie:</span> But master, I&rsquo;ve been waiting for you all day.</p>
 ${appendLinkRow('Talk to Sherrie', '6b', true)}
@@ -680,7 +678,7 @@ ${storyImageRight('25_1')}
 <p><span class="Michael">Michael:</span> Show me.</p>
 ${appendLinkRow('Master of a delicious slave (Premium)', '6c')}
 
-${appendLinkRow('Skip Scene (End Chapter)')}
+<p>Skip Scene (End Chapter)</p>
 `
 )
 
@@ -729,24 +727,48 @@ ${storyImage(30)}
 <p>Michael pulled his finger out. Sherrie&rsquo;s head thrown back trying to catch her breath. He observed her spasms and shakes. He didn&rsquo;t know but he thought was trying to suppress an orgasm from going through. Michael understood Sherrie liked being controlled but there was no way she was enjoying herself now. This was the opposite of pleasure. He, however, was enjoying myself in a way he hadn&rsquo;t felt before. He needed more of this.</p>
 ${storyImage(31)}
 <p>He left Sherrie on the couch and went upstairs straight to his room, ignoring her calls.</p>
-${storyEndButton('Chapter 5')}
+${appendLinkRow('To be continued...', 'demoEnd', true, 'hideSectionsDemo164()')}
+
+
+
 `
 )
 
 
 
 
+const demoEnd = storyRow('demoEnd', 'More coming soon', 
+    `<p>If you enjoyed this experience, I’d love your support on Patreon! By joining, you’ll help us continue making experiences like this, get early 
+    updates on future releases and access to our exclusive Discord community. Also, if you can, show some love on the forum where you found this, and don’t forget to check out my first story, <strong>Becoming The Hangman</strong>.</p>
+    <a class="btn btn--primary custom-story-button" href="https://www.patreon.com/Liturgy97"  target="_blank">
+    Visit Patreon</a>
+
+    <a id="End-Chapter" class="btn btn--stroke custom-story-button" href="#" onclick="endChapter();">
+    End Chapter</a>
+    `
+    )
+
+
+}
+
+
+
+function hideSectionsDemo164() {
+    document.querySelector('#intro').style.display = "none";
+    document.querySelector('#index-title-head').style.display = "none";
+    document.querySelector('#chapter-index').style.display = "none";
+}
 
 setChapterIndex = ()=> {
-    currentChapterIndex.innerHTML= '';
+currentChapterIndex.innerHTML= '';
 
-    addToChapterIndex('Section 1', 'section1') 
-    addToChapterIndex('Section 2', 'section2') 
-    addToChapterIndex('Section 3', 'section3') 
-    addToChapterIndex('Section 4', 'section4') 
-    addToChapterIndex('Section 5', 'section5') 
-    addToChapterIndex('Section 6', 'section6') 
-    }
-    
+addToChapterIndex('Section 1', 'section1') 
+addToChapterIndex('Section 2', 'section2') 
+addToChapterIndex('Section 3', 'section3') 
+addToChapterIndex('Section 4', 'section4') 
+addToChapterIndex('Section 5', 'section5') 
+addToChapterIndex('Section 6', 'section6') 
+}
 
-    storyLoad();
+
+storyLoad();

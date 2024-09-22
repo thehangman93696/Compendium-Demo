@@ -64,7 +64,7 @@ var data = {};
 
 var gameLoaded = false;
 
-const version = "0.15";
+const version = "08.24.2024";
 
 if (version.toLowerCase().includes('demo')) savePrefix = 'datademo'
 
@@ -212,8 +212,6 @@ function saveCleanup() {
     if (story.name=='Boyhood' && story.chapters[0].name.includes('Demo')) story = new Story('Boyhood')
     story.chapters.forEach(ch=> {
       if (!isChapterAvailable(ch)) ch.isUnlocked = false;
-      if (!ch.isRead) story.isRead= false;
-      if (!ch.isComplete) story.isComplete= false;
 
       if (ch.hasOwnProperty('CurrentSection')) {
         delete ch.CurrentSection;

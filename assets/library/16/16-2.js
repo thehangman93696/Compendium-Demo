@@ -239,7 +239,7 @@ ${storyImage('S/8')}
 <p><span class="Sherrie">Sherrie:</span> I couldn&rsquo;t get to your father&rsquo;s heart, so I decided to play with the only heart he trusted, his best friend Adrian.</p>
 ${storyImageCenter('S/9')}
 <p><span class="Sherrie">Sherrie:</span> Adrian was extremely smart, but he was also a player. I teased him a couple of times and he understood the gestures quickly. He<br />asked me out once he noticed I had an interest in him, and we went on our first date.</p>
-<p>(Developer's Note: Sherrie and Adrian's first date is a replication of a scene from the masterpiece <em>Growing UP A Master</em> by MWTB, a nod to a story that affected me a lot and inspired many aspects of this story.)</p>
+<p>(Developer's Note: Sherrie and Adrian's first date is a replication of a scene from the masterpiece <em>Growing UP A Master</em> by MWTB, a nod to a story that affected me a lot and inspired several aspects of this story.)</p>
 
 ${storyImageCenter('S/10')}
 

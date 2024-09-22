@@ -102,8 +102,7 @@
 
             init();
 
-           
-            
+        
         }
         updateGameStartButton();
 
