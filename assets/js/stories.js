@@ -218,25 +218,25 @@ name: "NXT&rsquo;s Finest",
 num : 5,
 wordCount: 6785,
 index: true,
-subtitle: "Coming Soon"
+index: true,
+
 }, 
 {
 name: "Second Happiness",
 num : 6,
-wordCount: 0,
-subtitle: "Coming Soon"
+wordCount: 3730,
+index: true,
 }, 
 {
 name: "You&rsquo;re such a flirt",
 num : 7,
-wordCount: 0,
-subtitle: "Coming Soon"
+wordCount: 1355,
 }, 
 {
 name: "Our First Date",
 num : 8,
-wordCount: 0,
-subtitle: "Coming Soon"
+wordCount: 15846,
+index: true,
 }, 
 {
 name: "My Moon",
@@ -444,14 +444,12 @@ storyNames.forEach(storyName => {
       story.isSeen = false;
       story.isRead = false;
       story.isComplete = false;
-      console.log('New Chapter Added', chapter)
 
     } else {
       
       const chapterOrigin = getChapterOrigin(chapter);
       if ((chapter.subtitle == "Coming Soon" || chapter.subtitle == "Patreon Exclusive") && (!chapterOrigin.hasOwnProperty('subtitle') || chapterOrigin.subitle!=chapter.subtitle)) {
         chapter = new Chapter(story.name, chapterOrigin);
-        console.log("New Chapter Added, ", chapter)
         story.chapters[chapter.num] = chapter;
         story.isSeen = false;
         story.isRead = false;
@@ -461,14 +459,14 @@ storyNames.forEach(storyName => {
       if (chapter.name!=chapterOrigin.name) chapter.name=chapterOrigin.name;
     }
 
-    if (i > 0 && story.chapters[i-1].isRead && isChapterAvailable(story.chapters[i])) story.chapters[i].isUnlocked = true;
-    if (story.name == "Protecting A Femboy" && story.chapters[2].isComplete) {
-      story.isSeen = true;
-      story.isRead = true;
-      story.isComplete = true;
+    if (i > 0 && story.chapters[i-1].isRead && isChapterAvailable(story.chapters[i])) {
+      story.chapters[i].isUnlocked = true;
+      story.currentChapter = story.chapters[i];
     }
+    
 
   }
+
   updateStoryObj(story);
 });
 }

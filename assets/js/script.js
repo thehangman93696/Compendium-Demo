@@ -64,7 +64,7 @@ var data = {};
 
 var gameLoaded = false;
 
-const version = "08.24.2024";
+const version = "0.15";
 
 if (version.toLowerCase().includes('demo')) savePrefix = 'datademo'
 

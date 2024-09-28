@@ -355,35 +355,14 @@ ${storyImage(13)}
 <p><span class= "E-Henry">"She can have the servants' quarters tonight."</span> Henry declared with a dismissive wave of his hand.</p>
 <p>Emma hopped happily, ran to collect the rubble of her clothes on the ground, and skipped out of the room naked, carelessly, her titters filling the air.</p>
     
-${appendLinkRow('To be continued...', 'demoEnd', true, 'hideSectionsDemo142()')}
-
-
-
-`
-)
-
-
-const demoEnd = storyRow('demoEnd', 'More coming soon', 
-    `<p>If you enjoyed this experience, I’d love your support on Patreon! By joining, you’ll help us continue making experiences like this, get early 
-    updates on future releases and access to our exclusive Discord community. Also, if you can, show some love on the forum where you found this, and don’t forget to check out my first story, <strong>Becoming The Hangman</strong>.</p>
-    <a class="btn btn--primary custom-story-button" href="https://www.patreon.com/Liturgy97"  target="_blank">
-    Visit Patreon</a>
-
-    <a id="End-Chapter" class="btn btn--stroke custom-story-button" href="#" onclick="endChapter();">
-    End Chapter</a>
-    `
-    )
-
+${storyEndButton()}    
+`);
 section12.appendChild(row12);
 
 
 }
 
-function hideSectionsDemo142() {
-    document.querySelector('#intro').style.display = "none";
-    document.querySelector('#index-title-head').style.display = "none";
-    document.querySelector('#chapter-index').style.display = "none";
-}
+
 setChapterIndex = ()=> {
     currentChapterIndex.innerHTML= '';
 
